@@ -1,9 +1,23 @@
-const TelegramBot = require('node-telegram-bot-api');
+index.js
 
-const token = "8849951874:AAEvrzdVgfuWF2BoKopAJ-HTSWjXDngqhr4";
+Edit file
 
-const bot = new TelegramBot(token, { polling: true });
+1 const TelegramBot = 'node-telegram-bot-a
 
-bot.onText(/\/start/, (msg) => {
-  bot.sendMessage(msg.chat.id, "سلام! ربات با موفقیت روشن شد. 🎉");
-});
+2
+
+Delete file
+
+Show History
+
+3 const token = "88499 zdVgfuWF2BoKopAJ-HTSWjXDngqhr4" ;
+
+5 const bot = new TelegramBot (token, { polling : true });
+
+6
+
+7 bot.onText(/\/start/, (msg) => {
+
+8 bot.sendMessage(msg.chat.id, ;(". سلام ربات با موفقیت روشن شد
+
+9 });
