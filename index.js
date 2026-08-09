@@ -1,23 +1,13 @@
-index.js
+const TelegramBot = require('node-telegram-bot-api');
 
-Edit file
+const token = 'YOUR_BOT_TOKEN';
 
-1 const TelegramBot = 'node-telegram-bot-a
+const bot = new TelegramBot(token, {
+  polling: true
+});
 
-2
+bot.onText(/\/start/, (msg) => {
+  bot.sendMessage(msg.chat.id, 'سلام! ربات با موفقیت روشن شد 8849951874:AAEmsXODGI8Q4UqRKI97Tz-uXKeTPtWlc94');
+});
 
-Delete file
-
-Show History
-
-3 const token = "88499 zdVgfuWF2BoKopAJ-HTSWjXDngqhr4" ;
-
-5 const bot = new TelegramBot (token, { polling : true });
-
-6
-
-7 bot.onText(/\/start/, (msg) => {
-
-8 bot.sendMessage(msg.chat.id, ;(". سلام ربات با موفقیت روشن شد
-
-9 });
+console.log('Telegram bot is running...');
